@@ -4,7 +4,7 @@ import { almanac, range, map } from '../utils/types.js';
 const parseInput = (rawInput: string) => {
     const regex = /:\s+((?:\d+\s*)+)/gm;
     const matches = [...rawInput.matchAll(regex)];
-
+ 
     // output data structure
     const almanac: almanac = {
         seeds: [],
