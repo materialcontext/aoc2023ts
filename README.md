@@ -11,11 +11,11 @@
 
 <!--SOLUTIONS-->
 
-![Day](https://badgen.net/badge/01/%E2%98%86%E2%98%86/gray)
-![Day](https://badgen.net/badge/02/%E2%98%86%E2%98%86/gray)
-![Day](https://badgen.net/badge/03/%E2%98%86%E2%98%86/gray)
-![Day](https://badgen.net/badge/04/%E2%98%86%E2%98%86/gray)
-![Day](https://badgen.net/badge/05/%E2%98%86%E2%98%86/gray)
+![Day](https://badgen.net/badge/01/%E2%98%86%E2%98%86)
+![Day](https://badgen.net/badge/02/%E2%98%86%E2%98%86)
+![Day](https://badgen.net/badge/03/%E2%98%86%E2%98%86)
+![Day](https://badgen.net/badge/04/%E2%98%86%E2%98%86)
+![Day](https://badgen.net/badge/05/%E2%98%86%E2%98%86)
 ![Day](https://badgen.net/badge/06/%E2%98%86%E2%98%86/gray)
 ![Day](https://badgen.net/badge/07/%E2%98%86%E2%98%86/gray)
 ![Day](https://badgen.net/badge/08/%E2%98%86%E2%98%86/gray)
@@ -69,30 +69,30 @@ npm start 1
 
 ```
 Day 01
-Time part 1: - 5.05ms
-Time part 2: - 4.114ms
-Both parts: - 9.169ms
+Time part 1: 5.05ms
+Time part 2: 4.114ms
+Both parts: 9.169ms
 ```
 
 ```
 Day 02
-Time part 1: - 1.989ms
-Time part 2: - 2.069ms
-Both parts: - 4.085ms
+Time part 1: 1.989ms
+Time part 2: 2.069ms
+Both parts: 4.085ms
 ```
 
 ```
 Day 03
-Time part 1: -
-Time part 2: -
-Both parts: -
+Time part 1: 49.521ms
+Time part 2: 91.965ms
+Both parts: 141.486ms
 ```
 
 ```
 Day 04
-Time part 1: -
-Time part 2: -
-Both parts: -
+Time part 1: 3.282ms
+Time part 2: 30.44ms
+Both parts: 33.722ms
 ```
 
 ```
