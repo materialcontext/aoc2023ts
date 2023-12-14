@@ -1,5 +1,13 @@
 import run from 'aocrunner';
-import { almanac, range, map } from '../utils/types.js';
+
+export type range = [number, number];
+export type map = [number, number, number]
+
+export type almanac = {
+  seeds: number[];
+  seedRanges: range[];
+  data: map[][];
+};
 
 const parseInput = (rawInput: string) => {
     const regex = /:\s+((?:\d+\s*)+)/gm;
