@@ -89,10 +89,13 @@
     },
     {
       "part1": {
-        "solved": false,
-        "result": null,
-        "attempts": [],
-        "time": null
+        "solved": true,
+        "result": "245794640",
+        "attempts": [
+          "245902087",
+          "245943086"
+        ],
+        "time": 223.309
       },
       "part2": {
         "solved": false,
