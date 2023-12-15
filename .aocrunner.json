@@ -95,13 +95,13 @@
           "245902087",
           "245943086"
         ],
-        "time": 223.309
+        "time": 163.7704
       },
       "part2": {
         "solved": false,
-        "result": null,
+        "result": "245749785",
         "attempts": [],
-        "time": null
+        "time": 311.8538
       }
     },
     {
