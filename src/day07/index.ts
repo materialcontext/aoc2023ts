@@ -16,7 +16,6 @@ type hand = {
 };
 
 let cardRank = '23456789TJQKA';
-const test = ['ABBCC', 'AAAAA', 'ABCAB', 'CBBBA', 'ABCDC', 'ABCDE'];
 
 function determinePower(value: string, unique: number): number {
     let output: number;
@@ -26,12 +25,10 @@ function determinePower(value: string, unique: number): number {
             break;
         case 2: {
             output = isFourOfAKind(value) ? 6 : 5;
-            console.log(value, output)
             break;
         }
         case 3: {
             output = isThreeOfAKind(value) ? 4 : 3;
-            console.log(value, output)
             break;
         }
         case 4:
@@ -45,7 +42,7 @@ function determinePower(value: string, unique: number): number {
 
 function isFourOfAKind(value: string): boolean {
     let runs = value.match(/(.)\1+/g);
-    if (runs === null)  return false;
+    if (runs === null) return false;
     if (runs.length > 1) {
         return runs[0] === runs[1] ? true : false;
     }
@@ -54,8 +51,7 @@ function isFourOfAKind(value: string): boolean {
     if (runs[0].length === 3) {
         if (runs[0][0] === value[4]) return true;
     }
-    return false
-
+    return false;
 }
 
 function isThreeOfAKind(value: string): boolean {
@@ -93,17 +89,20 @@ function calculateScore(hands: hand[]) {
 
 function processJoker(hand: hand): hand {
     let newHands = [];
-    let chars = new Set(hand.value.split(''));
-    for (let char of chars) {
-        let newHand = hand.value.replace('J', char)
+    // get a list of the unique cards in the hand
+    let cards = new Set(hand.value.split(''));
+    for (let card of cards) {
+        // try new hands with replacing J with each symbol
+        let newHand = hand.value.replace(/J/g, card);
         let unique = countUnique(newHand);
         newHands.push({
             value: hand.value,
             power: determinePower(newHand, unique),
-            score: hand.score
-        })
+            score: hand.score,
+        });
     }
- // hejkkhdfsdf
+    newHands.sort((a, b) => sortHands(a, b));
+    return newHands.pop()!;
 }
 
 const parseInput = (rawInput: string): hand[] => {
@@ -127,14 +126,14 @@ const part1 = (rawInput: string) => {
 };
 
 const part2 = (rawInput: string) => {
-    cardRank = "J23456789TQKA"
+    cardRank = 'J23456789TQKA';
     let hands = parseInput(rawInput);
-    for (let hand of hands) {
-        if (hand.power !== 7 && hand.value.includes("J")) {
-            hand = processJoker(hand);
+    hands.forEach((hand, idx) => {
+        if (hand.power !== 7 && hand.value.includes('J')) {
+            hands[idx] = processJoker(hand);
         }
-    }
-    hands.sort((a, b)=> sortHands(a, b));
+    });
+    hands.sort((a, b) => sortHands(a, b));
     return calculateScore(hands);
 };
 
@@ -149,15 +148,14 @@ run({
         solution: part1,
     },
     part2: {
-        tests: [
-            // {
-            //   input: ``,
-            //   expected: "",
-            // },
-        ],
+        // tests: [
+        //     {
+        //         input: testString,
+        //         expected: 5905,
+        //     },
+        // ],
         solution: part2,
     },
     trimTestInputs: true,
     onlyTests: false,
 });
-
