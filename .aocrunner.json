@@ -5,13 +5,13 @@
   "days": [
     {
       "part1": {
-        "solved": false,
+        "solved": true,
         "result": "54561",
         "attempts": [],
         "time": 5.0553
       },
       "part2": {
-        "solved": false,
+        "solved": true,
         "result": "54076",
         "attempts": [],
         "time": 4.1138
@@ -19,13 +19,13 @@
     },
     {
       "part1": {
-        "solved": false,
+        "solved": true,
         "result": "2331",
         "attempts": [],
         "time": 1.9053
       },
       "part2": {
-        "solved": false,
+        "solved": true,
         "result": "71585",
         "attempts": [],
         "time": 2.3276
@@ -33,13 +33,13 @@
     },
     {
       "part1": {
-        "solved": false,
+        "solved": true,
         "result": "512794",
         "attempts": [],
         "time": 49.5208
       },
       "part2": {
-        "solved": false,
+        "solved": true,
         "result": "67779080",
         "attempts": [],
         "time": 91.9652
@@ -47,13 +47,13 @@
     },
     {
       "part1": {
-        "solved": false,
+        "solved": true,
         "result": "21105",
         "attempts": [],
         "time": 3.2822
       },
       "part2": {
-        "solved": false,
+        "solved": true,
         "result": "5329815",
         "attempts": [],
         "time": 30.4402
@@ -61,13 +61,13 @@
     },
     {
       "part1": {
-        "solved": false,
+        "solved": true,
         "result": "26273516",
         "attempts": [],
         "time": 1.3663
       },
       "part2": {
-        "solved": false,
+        "solved": true,
         "result": "34039469",
         "attempts": [],
         "time": 3.7374
@@ -75,16 +75,16 @@
     },
     {
       "part1": {
-        "solved": false,
-        "result": null,
+        "solved": true,
+        "result": "220320",
         "attempts": [],
-        "time": null
+        "time": 4.1836
       },
       "part2": {
-        "solved": false,
-        "result": null,
+        "solved": true,
+        "result": "34454850",
         "attempts": [],
-        "time": null
+        "time": 0.1274
       }
     },
     {
